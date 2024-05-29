@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brawl Stars eSports Coverage</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body> 
+    
+    <div class="menu">
+        <ul>
+            <li><a id="matches" href="html/matches.html">Matches</a></li>
+            <li><a id="events"href="html/events.html">Events</a></li>
+            <li><a id="rankings" href="html/ranking.html">Rankings</a></li>
+            <li><a id="stats" href="html/stats.html">Stats</a></li>     
+      </ul>
+      <div><button id="button" onclick="myFunction()">Dark Mode</button></div>
+    </div>
+    <script> function myFunction() {
+        var element = document.body;
+        element.classList.toggle("dark-mode");
+        if((element.classList == "dark-mode") === true){
+            document.getElementById("button").innerHTML = 'Dark Mode <br> <span style="green"> ON</style"'
+        } else {
+            document.getElementById("button").innerHTML = 'Dark Mode <br> <span style="blue"> OFF</style"'
+        }
+    }</script>
+  <script src="index.js"> </script>
+</body>
+</html>
